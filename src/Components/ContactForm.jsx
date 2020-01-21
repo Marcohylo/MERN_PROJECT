@@ -52,9 +52,7 @@ class ContactForm extends Component {
       </div>
     )
   }
-
-
-
+  
   render() {
     return (
       <form onSubmit={this.props.handleSubmit} className="myContactForm">
