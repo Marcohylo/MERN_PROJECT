@@ -10,7 +10,7 @@ const validate = (values) => {
 
   if(!values.Name)
   {
-    errors.name="This is a required field"
+    errors.Name="This is a required field"
   }
 
   if(!values.LastName)
