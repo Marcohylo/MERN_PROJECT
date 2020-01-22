@@ -41,7 +41,7 @@ class PaymentForm extends Component {
 
     renderDropdown = () => {
         return(
-            <select name="area">
+            <Field name="area" component ="select">
               <option value="Islands">Islands</option>
               <option value="Kwai Tsing">Kwai Tsing</option>
               <option value="North">North</option>
@@ -58,7 +58,7 @@ class PaymentForm extends Component {
               <option value="Eastern">Eastern</option>
               <option value="Southern">Southern</option>
               <option value="Wan Chai">Wan Chai</option>
-            </select>
+            </Field>
         )
     }
 
