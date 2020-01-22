@@ -18,6 +18,11 @@ const validate = (values) => {
     errors.LastName="This is a required field"
   }
 
+  if(!values.UnitNumber)
+  {
+    errors.UnitNumber="This is a required field"
+  }
+
   if(!values.StreetAddress)
   {
     errors.StreetAddress="This is a required field"
@@ -78,7 +83,7 @@ class PaymentForm extends Component {
       <form onSubmit={this.props.handleSubmit} className="myPaymentForm">
         {/* Name field */}
         <Field
-          label="Name" name="name" component={this.renderField} type="text"/>
+          label="Name" name="Name" component={this.renderField} type="text"/>
 
         <Field
           label="Last Name" name="LastName" component={this.renderField} type="text"/>
