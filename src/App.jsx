@@ -3,11 +3,8 @@ import React from 'react';
 import {Provider} from 'react-redux';
 // Internals
 import './App.css';
-
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-
 import store from './store';
-
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import Contact from "./pages/Contact";
@@ -20,6 +17,7 @@ import AdminDashboard from "./pages/AdminDashboard";
 import EditListing from "./pages/EditListing";
 import NewListing from "./pages/NewListing";
 import ListingInfo from "./pages/ListingInfo";
+import Listings from "./pages/Listings";
 
 function App() {
   return (
@@ -39,6 +37,7 @@ function App() {
           <Route path="/thank_you" component={ThankYou} />
           <Route path="/new_listing" component={NewListing} />
           <Route path="/listing_info" component={ListingInfo} />
+          <Route path="/listings_all" component={Listings} />
         </Switch>
       </BrowserRouter>
     </Provider>
