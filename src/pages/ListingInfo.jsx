@@ -1,10 +1,11 @@
 import React, { Component } from "react";
-
+import ListingShow from '../components/ListingShow';
 class ListingInfo extends Component {
   render() {
     return (
       <div>
-        <h1> <ListingInfo /> Individual Listing Info</h1>
+        <h1>Individual Listing Info</h1>
+        <ListingShow />
       </div>
     );
   }
