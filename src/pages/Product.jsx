@@ -21,27 +21,27 @@ render() {
   const { product } = this.state;
   return (
     product && 
-      <div className="Content">        
+      <div className="Content">       
                 
-                <div className="ProductDetailsImageWrapper"></div>
-                <p className="ProductImage">{product.image}</p>
-                <p className="ProductTitle">{product.title}</p>
+                  
+                <p className="ProductTitle">{product.title}</p> <p className="ProductImage">{product.image}</p>
+                
                 <p className="ProductPrice">Price: ${product.price}</p>
-              
-                <div className="ProductDescription">
-                                <h2>Description</h2>
-                                <p>{product.description}</p>
-                            </div>
-    
-    <AddToCart product={product} />
-    <Button>Buy now</Button>
-    <br></br>
-    <Link to={`/all_products`}><Button style={{backgroundColor: '#000000'}} size="sm">Back to Product page</Button></Link>
+                
+                <div className="hi"><AddToCart product={product}/>
+                <Button>Buy now</Button></div>
+ 
+                
+                
+                
+                <h2 className="DescriptionTitle">Description</h2>  
+                  <p className="ProductDescription">{product.description}</p>
+                <div>
+                 <Link to={`/all_products`}><Button style={{backgroundColor: '#000000'}}>Back to Product page</Button></Link>     
+
     </div>
-
+</div>
   )
-
-  
   }
 }
 
